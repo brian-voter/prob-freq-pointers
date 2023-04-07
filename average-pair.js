@@ -11,10 +11,11 @@
 // if no pair is found, return false;
 
 /**
- *
+ * Compares the average of 2 numbers from nums to the targetAvg; returns true if the value is the
+ * same as targetAvg, false if not;
  * @param {number []} nums
  * @param {number} targetAvg
- * @returns true if two nums are found whose avg equals targetAvg;
+ * @returns {boolean} true if two nums are found whose avg equals targetAvg;
  *    otherwise, returns false;
  */
 
@@ -23,11 +24,11 @@ function averagePair(nums, targetAvg) {
   let right = nums.length - 1;
 
   while (left < right) {
-    const ave = (nums[left] + nums[right]) / 2;
+    const avgOfNums = (nums[left] + nums[right]) / 2;
 
-    if (ave === targetAvg) {
+    if (avgOfNums === targetAvg) {
       return true;
-    } else if (ave < targetAvg) {
+    } else if (avgOfNums < targetAvg) {
       left++;
     } else {
       right--;
