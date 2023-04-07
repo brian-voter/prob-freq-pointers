@@ -37,7 +37,7 @@ for
  *
  * @param {string} word the string we are trying to spell
  * @param {string} letters the letters we have available
- * @returns true if word can be spelled with the letters in letters, else false
+ * @returns true if word can be spelled with the letters in letters, else false TODO: boolean in brackets
  */
 function canConstructWord(word, letters) {
   if (word.length === 0) {
@@ -80,5 +80,6 @@ function getFrequencyCounter(items) {
 
   return freqs;
 }
+
 
 
